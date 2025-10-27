@@ -27,7 +27,7 @@ measured_Mu = {1.0: 0.048, 1.5: 0.048, 2.6: 0.048}
 # ------------------------
 def bearing_coefficients(phi_rad):
     Nq = math.exp(math.pi * math.tan(phi_rad)) * math.tan(math.pi / 4 + phi_rad / 2)**2
-    Ng = 1.8 * (Nq - 1) * math.tan(phi_rad)
+    Ng = 1.5 * (Nq - 1) * math.tan(phi_rad)
     return Nq, Ng
 
 def critical_rotation_and_capacity(e, p):
